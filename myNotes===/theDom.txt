@@ -1,1 +1,14 @@
-The DOM notes
+The DOM notes==================
+
+innerWidth
+innerHeight
+
+DOM Document Object Model
+
+the entire document is accessible to us via the document keyword (try it type document in console).
+
+Navigator
+- higher level than the window keyword that gives info about not just the browser but the device itself. 
+
+
+Selecting Elements On the Page============================
