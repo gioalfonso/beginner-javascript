@@ -1,4 +1,4 @@
-The DOM notes==================
+==The DOM notes==================
 
 innerWidth
 innerHeight
@@ -11,4 +11,13 @@ Navigator
 - higher level than the window keyword that gives info about not just the browser but the device itself. 
 
 
-Selecting Elements On the Page============================
+==Selecting Elements On the Page============================
+
+document.querySelector()
+document.querySelectorAll()
+NodeList is a list of things although not an array.
+
+==After Selecting Element What Can you Do With Them (Element Properties/Method)=============
+
+
+ 
