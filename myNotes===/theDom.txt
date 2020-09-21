@@ -11,13 +11,35 @@ Navigator
 - higher level than the window keyword that gives info about not just the browser but the device itself. 
 
 
+
 ==Selecting Elements On the Page============================
 
 document.querySelector()
 document.querySelectorAll()
 NodeList is a list of things although not an array.
 
+
 ==After Selecting Element What Can you Do With Them (Element Properties/Method)=============
+(these get properties from the elements and set properties on the element)
 
-
+const heading = document.querySelector('h2');
+console.dir(heading); 
+- (console.dir) it will show the object property instead of just the element.
  
+console.log(heading.textContent);
+// set the textContent Property on that element
+heading.textContent = 'Wes is cool';
+console.log(heading.textContent);
+console.log(heading.innerText);
+
+* textContent vs innerText
+- textContent is the newer one
+
+innerHTML, outerHTML
+- gets content inside tag, outer gets content inside tag including the tag itself
+
+*method for inserting..
+
+insertAdjacentText - best way to attach text to end of something (see MDN)
+insertAdjacentHTML
+insertAdjacentElement
