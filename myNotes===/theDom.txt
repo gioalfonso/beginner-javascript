@@ -43,3 +43,14 @@ innerHTML, outerHTML
 insertAdjacentText - best way to attach text to end of something (see MDN)
 insertAdjacentHTML
 insertAdjacentElement
+
+=Working with Classes===============================================================
+
+ element.classList
+
+const pic = document.querySelector('.nice');
+pic.classList.add('open');
+pic.classList.remove('cool');
+pic.classList.toggle('round');
+console.log(pic.classList); 
+ 
