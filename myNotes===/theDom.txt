@@ -53,4 +53,22 @@ pic.classList.add('open');
 pic.classList.remove('cool');
 pic.classList.toggle('round');
 console.log(pic.classList); 
+
+
+==Build in and Custom Data Attributes====================================
+
+** Setting the attributes like alt, classes width... USING DOT NOTATION
+pic.alt = 'Cute Pup'; //setter
+// pic.width = 200;
+console.log(pic.alt); //getter
+console.log(pic.naturalWidth); //getter   
+
+** these methods for setting / getting attribute..
+pic.setAttribute('alt', 'REALLY CUTE PUP');
+console.log(pic.getAttribute('alt'));
+
+**setAttribute  can be used to create non standard HTML attribute.
+ you can make your own but its not recommended.
+
+ ** data-xxx  attribute you can use if you want your own attribute 
  
