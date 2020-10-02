@@ -22,6 +22,13 @@ pic.naturaWidth = 200; //will not do anything
 pic.setAttribute('alt', 'REALLY CUTE PUP');
 console.log(pic.getAttribute('alt'));
 
+const custom = document.querySelector(".custom");
+console.log(custom.dataset);
+
+custom.addEventListener("click", function() {
+  alert(`Welcome ${custom.dataset.name} ${custom.dataset.last}`);
+});
+
 
 
 
