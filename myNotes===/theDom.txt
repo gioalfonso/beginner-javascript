@@ -71,4 +71,15 @@ console.log(pic.getAttribute('alt'));
  you can make your own but its not recommended.
 
  ** data-xxx  attribute you can use if you want your own attribute 
+
+==Create HTML in JS======================================================
+
+to create element HTML in js there are several ways
+
+1. Main way is
+document.createElement
+
+const myParagraph = document.createElement('p');
+
+
  
