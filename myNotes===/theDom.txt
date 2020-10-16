@@ -94,6 +94,19 @@ document.body.appendChild
 insertAdjacentElement // for inserting Element
 insertAdjacentText // for inserting text
 
+=== HTML from Strings and XSS=============================
+
+innerHTML - gets or sets the HTML or XML markup contained
+ within the element.
+
+document.createRange
+ - range is just a collection of elements or part of HTML that you can work with.
+
+document.createContextualFragment
+ -  from range we can append this method
+
+ const myFragment = document.createRange().createContextualFragment(myHTML);
+
 
 
 
