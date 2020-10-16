@@ -81,5 +81,29 @@ document.createElement
 
 const myParagraph = document.createElement('p');
 
+** How do you add element you created to the page. 
+There's an API called 
+- appendChild
+
+document.body (if you want to grab the body tag, its readily available)
+const body = document.querySelector('body'); // this is ok too but document.body is best.
+
+document.body.appendChild
+
+** Another way is 
+insertAdjacentElement // for inserting Element
+insertAdjacentText // for inserting text
+
+
+
+
+
+
+
+
+
+
+
+
 
  
