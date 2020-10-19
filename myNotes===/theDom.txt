@@ -108,8 +108,44 @@ document.createContextualFragment
  const myFragment = document.createRange().createContextualFragment(myHTML);
 
 
+== traversing and removing nodes=============================
+
+const wes = document.querySelector('.wes');
+console.log(wes.children); // gives only child elements
+console.log(wes.childNodes); // gives all Nodes and elements 
+console.log(wes.childElementCount);
+
+== properties for elements====
+el.firstElementChild
+el.lastElementChild
+el.previousElementSibling
+el.nextElementSibling
+el.parentElement
+
+== properties for Nodes======
+el.childNodes
+el.firstChild
+el.lastElementChild
+el.previousElementSibling
+el.nextElementSibling
+el.parentNode
+
+// Removing elements
+   - theres a method on every single elements and nodes
+     that is the ability to remove something.
+el.remove(); 
 
 
+// if an element is created and added to DOM it is 
+still in memory and can be put back in;
+
+const p = document.createElement('p');
+p.textContent = 'I will be removed';
+document.body.appendChild(p);
+
+p.remove();
+
+console.log(p); //it still exist and can be added again
 
 
 
