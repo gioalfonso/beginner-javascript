@@ -99,7 +99,7 @@ insertAdjacentText // for inserting text
 innerHTML - gets or sets the HTML or XML markup contained
  within the element.
 
-document.createRange
+document.createRange()
  - range is just a collection of elements or part of HTML that you can work with.
 
 document.createContextualFragment
