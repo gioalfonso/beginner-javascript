@@ -102,7 +102,8 @@ console.log(buttons)
 function deleteCard(event) {
   const buttonThatGotClicked = event.currentTarget;
   // buttonThatGotClicked.parentElement.remove();
-  buttonThatGotClicked.closest('.playerCard').remove();
+  buttonThatGotClicked.closest('.playerCard').remove(); 
+  // closest = will search for element thats closest to .playercard
 };
 //loop over them and attack a listener
 buttons.forEach(button => button.addEventListener('click', deleteCard));
