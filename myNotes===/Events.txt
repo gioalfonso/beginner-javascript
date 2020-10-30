@@ -19,3 +19,13 @@ el.addEventListener('click', callback func here)
 
 el.removeEventListener('click', handleClick);
                   what event to stop,   function you wish to stop
+
+** If you need to remove an event listener
+   - you must use a named function
+   - or you can use arrow function stored in variable
+   - Anonymous function cannot be removed.
+
+
+OTHER EVENTS and CREATE CUSTOM EVENTS
+
+Listening to multiple events
