@@ -1,0 +1,21 @@
+every elements has an event when it is being interacted.
+we use event listener to listen for the events.
+
+el.addEventListener('click', callback func here)
+                   event    callback function usually anonymous
+ - will take to arguments usually, sometimes 3
+ - you can also use a named function outside and pass it in as reference
+        
+        function handleClick() {
+
+        }
+    **naming function handle you can do to 
+    remind you its a callback or specific function
+    that gets passed in to event handler.
+
+- using outside function makes it reusable to different event listener
+
+===REMOVE EVENT LISTENER========================
+
+el.removeEventListener('click', handleClick);
+                  what event to stop,   function you wish to stop
