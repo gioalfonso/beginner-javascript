@@ -9,27 +9,53 @@ butts.addEventListener('click', handleClick);
 coolButton.addEventListener('click', handleClick);
 
 //stop an event listener
-// butts.removeEventListener('click', handleClick);
+butts.removeEventListener('click', handleClick);
 
 // LISTEN ON MULTIPLE ITEMS
 const buyButtons = document.querySelectorAll('button.buy');
 
-// console.log(buyButtons);
-
-function buyItem() {  // handler
-  console.log('BUYING ITEM');
+function handleBuyButtonClick(event) {
+  console.log('You are buying it!');
+  console.log(event)
 }
 
-function handleBuyButtonClick(buyButton) {
-  console.log('binding the buy button');
-  buyButton.addEventListener('click', buyItem);
-}
 
-buyButtons.forEach(handleBuyButtonClick);
+buyButtons.forEach(function(buyButton) {
+  buyButton.addEventListener('click', handleBuyButtonClick)
+})
 
-//using arrow function
-buyButtons.forEach((button) =>{
-  button.addEventListener('click', () => {
-    console.log('YOU CLICKED IT');
-  });
-});
+// stopped at 04:06
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

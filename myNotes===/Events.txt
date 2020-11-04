@@ -29,3 +29,7 @@ el.removeEventListener('click', handleClick);
 OTHER EVENTS and CREATE CUSTOM EVENTS
 
 Listening to multiple events
+
+
+===EVENTS - TARGETS, BUBBLING, PROPAGATION, CAPTURE=======
+
