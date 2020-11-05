@@ -72,3 +72,23 @@ you what actually is you're clicking on.
 
 ** CAPTURE **
 
+capture phase listens from top on the way down (to the target element)
+bubble phase listens bottom on the  way up
+
+// see video @14:00
+
+different types on evenlistener 
+'click'
+'mouseenter'
+'mousemove'
+... and mouseenter
+
+"this" keyword 
+  - a special word in javascipt, reserved word
+  - is always going to be equal to whatever is to the left of the dot.
+    in the case below (photoEl)
+    
+photoEl.addEventListener('mouseenter', function(e) {
+  console.log(e.currentTarget);
+  console.log(this);
+});
