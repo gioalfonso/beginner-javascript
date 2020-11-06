@@ -1,0 +1,27 @@
+const wes = document.querySelector('.wes');
+
+wes.addEventListener('click', function(event) {
+  const shouldChangePage = confirm('This website might be malicious!, do you wish to proceed');
+  if( !shouldChangePage) {
+    event.preventDefault();
+    // window.location = event.currentTarget.href;
+  }
+  console.log(shouldChangePage);
+});
+
+
+const signupForm = document.querySelector('[name="signup"]');
+
+signupForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const name = event.currentTarget.name.value;
+  if(name.includes('chad')) {
+    alert('Sorry bro');
+    event.preventDefault();
+  }
+  // console.log(event.currentTarget.name.value)
+  // console.log(event.currentTarget.email.value)
+  // console.log(event.currentTarget.agree.checked)
+});
+
+// stop @11:19
