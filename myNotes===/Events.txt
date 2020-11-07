@@ -110,3 +110,13 @@ const signupForm = document.querySelector('[name="signup"]');
   click the cog wheel (setting) on inspector and 
   check on "Preserve log upon navigation"
 
+OTHER TYPES OF EVENTS w FORM INPUT
+'click'
+'keyup'
+'keydown'
+'focus'
+'blur'
+
+===Events - Accesiblity Gotchas and Keyboard=========
+
+// just started  Events - Accesiblity Got

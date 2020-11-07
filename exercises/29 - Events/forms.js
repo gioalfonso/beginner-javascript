@@ -24,4 +24,16 @@ signupForm.addEventListener('submit', function(event) {
   // console.log(event.currentTarget.agree.checked)
 });
 
-// stop @11:19
+function logEvent(event) {
+  console.log(event.type)
+  console.log(event.currentTarget.value)
+}
+
+signupForm.name.addEventListener('keyup', logEvent);
+signupForm.name.addEventListener('keydown', logEvent);
+signupForm.name.addEventListener('focus', logEvent);
+signupForm.name.addEventListener('blur', logEvent);
+// 'keyup'
+// 'keydown'
+// 'focus'
+// 'blur'
