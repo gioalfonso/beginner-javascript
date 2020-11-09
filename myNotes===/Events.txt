@@ -119,4 +119,9 @@ OTHER TYPES OF EVENTS w FORM INPUT
 
 ===Events - Accesiblity Gotchas and Keyboard=========
 
-// just started  Events - Accesiblity Got
+*Things that are not keyboard accessible should not
+ have clicks registered on them.
+
+ website: www.keycode.info
+
+
