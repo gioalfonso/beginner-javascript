@@ -1,0 +1,25 @@
+canvas -
+    - the way that this works is that you go ahead and grab
+      on to the CANVAS then you grab on to this thing 
+      called CONTEXT (either 2d or 3d).
+    - then you've got a set of APIs, set of methods that are used
+      for drawing to the canvas (thing about like MS Paint)
+
+* The canvas is the element and the place where we do our drawing
+  is called the context.
+
+* ctx - common naming convention for the context
+
+ex.
+const canvas = document.querySelector('#etch-a-sketch');
+const ctx = document.getContext('2d');
+
+Tips:
+  If you are simply taking variable from a property on an object
+  You can short form (short cut) this.
+  This is called DE STRUCTURING
+
+const width = canvas.width;
+const height = canvas.height;  // the ojbect here is canvas
+
+const { width, height } = canvas;
