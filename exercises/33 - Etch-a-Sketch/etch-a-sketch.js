@@ -5,12 +5,13 @@ const shakebutton = document.querySelector('.shake');
 
 // Setup our canvas for drawing
 // make a variable called height and width from the same properties on our canvas
-const { width, height} = canvas;
+const { width, height} = canvas; 
             // const width = canvas.width;
             // const height = canvas.height;
 
 // create randon x and y starting points on the canvas.
-
+let x = Math.floor(Math.random() * width);
+console.log(width)
 // ======================= stopped @12:41 etch sketch
 
 ctx.lineJoin = 'round';
