@@ -23,3 +23,7 @@ const width = canvas.width;
 const height = canvas.height;  // the ojbect here is canvas
 
 const { width, height } = canvas;
+
+Math.random() - give random number less the 1 (0-.99999)
+Math.floor() - rounds it to 0-.99999
+Math.ceil() - round it 
