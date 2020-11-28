@@ -12,7 +12,7 @@ function handleCardButtonClick(event) {
   const name = card.querySelector('h2').textContent;
   // Populate the modal with the new info
   modalInner.innerHTML = `
-    <img src="${imgSrc.replace('200', '600')}" alt="${name}"/>
+    <img width="600" height="600" src="${imgSrc.replace('200', '600')}" alt="${name}"/>
     <p>${desc}</p>
   `;
   
@@ -30,7 +30,13 @@ function closeModal() {
 modalOuter.addEventListener('click', function(event) {
   const isOutside = !event.target.closest('.modal-inner');
   if(isOutside) {
-    modalOuter.classList.remove('open');
+    closeModal();
   }
-  console.log(isOutside)
+});
+
+// hookup ESC key
+window.addEventListener('keydown', (event) => {
+  if(event.key === 'Escape') {
+    closeModal();
+  }
 });
