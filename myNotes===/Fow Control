@@ -1,0 +1,19 @@
+Regex - Regular Expression is a way to match characters in some text.
+      - always start and closes with a / .
+
+
+    function slugify(sentence, lowercase) {
+      let slug = sentence.replace(/\s/g, '-'); // REGEX
+      if (lowercase) {
+        return slug.toLowerCase();
+      }
+      return slug;
+    }
+
+.includes() - a method on strings.
+'string'.includes(str 
+) 
+
+Values that are truthy and falsey
+
+
