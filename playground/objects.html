@@ -9,7 +9,42 @@
 </head>
 
 <body>
+
+  <input type="text" name="first" value="wes">
+
   <script>
+    const age = 100;
+    const wes = {
+      age: age,
+      name: 'wes ',
+      propertyToCheck: 'NEVER',
+      'cool-dudle': true,
+      'really cool': false,
+      '777': true,
+      dog: 'snickers',
+      clothing: {
+        shirts: 1,
+        pants: 2,
+      },
+      sayHello: function (greeting = 'Hey') {
+        console.log(this)
+        return `${greeting} ${this.name}`;
+      },
+    };
+    wes.job = 'Web Developer';
+    wes.age = 50;
+
+    // const wesFroze = Object.freeze(wes);
+    // const propertyToCheck = prompt('What do you want to check');
+    // console.log(wes.propertyToCheck);
+    // console.log(wes[propertyToCheck]);
+
+    const nameInput = document.querySelector('[name="first"]');
+    // const name = nameInput.value;
+    const name = nameInput ? nameInput.value : '';
+    console.log(name);
+
+    delete wes.job;
 
   </script>
 </body>
