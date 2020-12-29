@@ -44,7 +44,37 @@
     const name = nameInput ? nameInput.value : '';
     console.log(name);
 
-    delete wes.job;
+    // delete wes.job;
+    // wes.age = undefined;
+    // wes.age = null;
+
+    let name1 = 'wes';
+    let name2 = 'wes';
+
+    console.log(name1 === name2);
+    name1 = 'scott';
+    console.log(name1 === name2);
+    // update name1 to be what is name2
+
+    name1 = name2;
+    console.log(name1 === name2);
+    name2 = name1;
+    name2 = 'westopher';
+
+    const person1 = {
+      first: 'wes',
+      last: 'bos',
+    }
+    const person2 = {
+      first: 'wes',
+      last: 'bos',
+    }
+
+    const person3 = person1;
+    person3.first = 'Larry';
+    console.log(person3.first);
+    console.log(person1.first);
+
 
   </script>
 </body>
