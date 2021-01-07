@@ -11,7 +11,36 @@
 </head>
 
 <body>
+  <script>
+    const names = ['wes', 'kait', 'snickers', 'last one'];
+    // Arrays are 0 based. 0,1,2 
+    console.log(names[0]); // acces the item
+    console.log(names.length); // check how many items in array
+    console.log(names[names.length - 1]); // get the last item in array
 
+
+
+    /*
+        // Mutation Method - DO CHANGE THE ORIGINIGAL DATA
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // anytime you want to use a mutation method and mutate the original array
+        const numbersReversed = [...numbers].reverse();
+        console.log('reversed', numbersReversed);
+
+
+        // const numbersBackwards = numbers.reverse();
+        // numbers.reverse();
+        // console.log(numbersBackwards);
+        console.log(numbers) // Mutated. The original data has been changed
+
+
+
+        // Immutable Method - THEY DO NOT CHANGE THE ORIGINAL DATA
+        const pizzaSlice = numbers.slice(2, 4); // selects index 2 through index4, so you get item 3 and 4
+        console.log(pizzaSlice);                //.slice() takes a chunk of an Array
+        console.log(numbers); // original Array was not changed
+    */
+  </script>
 </body>
 
 </html>
