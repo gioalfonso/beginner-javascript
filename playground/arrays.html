@@ -18,7 +18,22 @@
     console.log(names.length); // check how many items in array
     console.log(names[names.length - 1]); // get the last item in array
 
+    names.push('lux'); // add item to an array, at the end.
+    console.log(names);
+    const names2 = [...names, 'lux']; // use this to preserve the original array 'names'
 
+    names.unshift('poppy');
+    console.log('poppy');
+    const names3 = ['poppy', ...names];
+
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    console.log(numbers);
+    numbers.splice(3, 5); // splice is mutable, it changes the original
+    console.log(numbers);
+
+
+    // .slice() -- does not mutate the original array
 
     /*
         // Mutation Method - DO CHANGE THE ORIGINIGAL DATA
