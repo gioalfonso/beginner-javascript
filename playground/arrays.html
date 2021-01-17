@@ -32,6 +32,50 @@
     numbers.splice(3, 5); // splice is mutable, it changes the original
     console.log(numbers);
 
+    const bikes = ['bianchi', 'miele', 'panasonic', 'miata'];
+
+    const newBikes = [
+      ...bikes.slice(0, 2),
+      'benotto',
+      ...bikes.slice(2),
+    ];
+    console.log(newBikes);
+
+    const newBikes2 = [
+      ...newBikes.slice(0, 3),
+      ...newBikes.slice(4),];
+    console.log(newBikes2)
+
+    //
+
+    const comments = [
+      { text: 'Cool Benas', id: 123 },
+      { text: 'Love this', id: 133 },
+      { text: 'Neato', id: 233 },
+      { text: 'good bikes', id: 333 },
+      { text: 'so good', id: 433 },
+    ];
+
+    function deleteComment(id, comment) {
+      // first find the index of the item in the array
+      // make a new array without that item in it
+      // return our new array
+    };
+
+    const kaitIndex = names.findIndex(name => name === 'kait');
+
+    const newNamesWithOutKate = [
+      // get everything upto Kait index;
+      ...names.slice(0, kaitIndex),
+      // everything after Kait index;
+      ...names.slice(kaitIndex + 1)
+    ];
+
+    console.log(newNamesWithOutKate);
+
+
+
+
 
     // .slice() -- does not mutate the original array
 
