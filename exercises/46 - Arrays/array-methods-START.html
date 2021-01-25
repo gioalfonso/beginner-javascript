@@ -87,13 +87,25 @@
     const t2 = toppings.push(lastItem);
     console.log(t2);
     // take the first item off toppings with shift()
+    const firstItem = toppings.shift();
+    console.log(firstItem);
     // add it back in with unshift()
+    toppings.unshift(firstItem);
     // Do the last four,but immutable (with spreads and new variables)
+    let newToppings = toppings.slice(0, toppings.length - 1);
+    newToppings = [...toppings, toppings[toppings.length - 1]];
 
 
     // Make a copy of the toppings array with slice()
+    const toppingsCopy = toppings.slice(0);
+    toppings[0] = 'Mushy Boi';
+    console.log(toppings);
+    console.log(toppingsCopy);
     // Make a copy of the toppings array with a spread
+    const toppingsCopy2 = [...toppings];
     // take out items 3 to 5 of your new toppings array with splice()
+    toppingsCopy.splice(3, 5);
+    console.log(toppingsCopy);
     // find the index of Avocado with indexOf() / lastIndexOf()
     // Check if hot sauce is in the toppings with includes()
     // add it if it's not
