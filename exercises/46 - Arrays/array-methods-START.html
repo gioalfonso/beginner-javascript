@@ -107,9 +107,22 @@
     toppingsCopy.splice(3, 5);
     console.log(toppingsCopy);
     // find the index of Avocado with indexOf() / lastIndexOf()
-    // Check if hot sauce is in the toppings with includes()
+    const avoIndex = toppings.indexOf('Avocado');
+    console.log(avoIndex);
+    // Check if hot  sauce is in the toppings with includes()
+    const isInToppings = toppings.includes('Hot Sauce');
+    console.log(isInToppings);
     // add it if it's not
+    if (!isInToppings) {
+      toppings.push('Hot Sauce');
+    }
+    console.log(toppings);
     // flip those toppings around with reverse()
+    toppings.reverse();
+    console.log(toppings)
+
+    const toppingsReversed = [...toppings].reverse();
+    console.log(toppingsReversed)
 
     /*
       Callback Methods
